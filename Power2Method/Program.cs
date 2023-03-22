@@ -53,6 +53,13 @@ namespace Power2Method
         static void Main(string[] args)
         {
             string aux = Console.ReadLine();
+            int nCount1 = Convert.ToInt32(aux);
+            aux = Console.ReadLine();
+            int nCount2 = Convert.ToInt32(aux);
+            PowersOf2UntilN(nCount1,nCount2);
+
+
+            aux = Console.ReadLine();
             int nCount = Convert.ToInt32(aux);
             PowersOf2UntilN(nCount);
 
