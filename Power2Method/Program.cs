@@ -4,6 +4,12 @@ namespace Power2Method
 {
     class Program
     {
+        /// <summary>
+        /// Shows the powers of 2 up to the Nth power
+        /// </summary>
+        /// <param name="n">
+        /// Last number shown is 2 to the power of this
+        /// </param>
         private static void PowersOf2UntilN(int n)
         {
             for (int i = 1 ; i <= ( 1 << n ) ; i<<=1 )
@@ -12,11 +18,21 @@ namespace Power2Method
             }
         }
 
-
+        /// <summary>
+        /// Shows the powers of 2 up to the 5th power
+        /// </summary>
         private static void PowersOf2Until5()
         {
             PowersOf2UntilN(5);
         }
+
+        /// <summary>
+        /// Asks for an int twice and prints powers of 2 up to those powers,
+        /// then prints powers of 2 up to the 5th power twice
+        /// </summary>
+        /// <param name="args">
+        /// Unused
+        /// </param>
         static void Main(string[] args)
         {
             string aux = Console.ReadLine();
