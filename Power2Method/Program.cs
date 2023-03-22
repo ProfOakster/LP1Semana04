@@ -5,6 +5,26 @@ namespace Power2Method
     class Program
     {
         /// <summary>
+        /// Shows the powers of 2 from the N1th power, 
+        /// up to the N2th power
+        /// </summary>
+        /// <param name="n1">
+        /// Starting power of 2
+        /// </param>
+        /// <param name="n2">
+        /// Final power of 2
+        /// </param>
+        private static void PowersOf2UntilN(int n1, int n2)
+        {
+            for (int i = 1 << n1 ; i <= ( 1 << n2 ) ; i<<=1 )
+            {
+                Console.WriteLine(i);
+            }
+        }
+
+
+
+        /// <summary>
         /// Shows the powers of 2 up to the Nth power
         /// </summary>
         /// <param name="n">
