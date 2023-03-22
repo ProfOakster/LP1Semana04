@@ -15,10 +15,7 @@ namespace Power2Method
 
         private static void PowersOf2Until5()
         {
-            for (int i = 1 ; i <= ( 1 << 5 ) ; i<<=1 )
-            {
-                Console.WriteLine(i);
-            }
+            PowersOf2UntilN(5);
         }
         static void Main(string[] args)
         {
